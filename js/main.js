@@ -1,4 +1,4 @@
-/* Shivalik Institute of Technology & Management — main.js */
+/* Blue Ridge Institute of Technology — main.js */
 
 (function () {
   "use strict";
@@ -48,7 +48,7 @@
     }
   }
 
-  /* Enquiry form */
+  /* Inquiry form */
   var form = document.getElementById("enquiryForm");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -62,7 +62,7 @@
         var name = form.querySelector("#fieldName");
         success.textContent =
           "Thank you" + (name && name.value ? ", " + name.value.trim() : "") +
-          ". Your enquiry has been received — the admissions office will contact you within two working days.";
+          ". Your inquiry has been received — the admissions office will contact you within two business days.";
         success.classList.add("is-visible");
       }
       form.reset();
